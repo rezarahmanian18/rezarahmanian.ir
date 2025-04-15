@@ -1,0 +1,117 @@
+body {
+    background-color: #f5f7fa;
+    font-family: 'Tahoma', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+.footer-custom{
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+.navbar {
+    background-color: #3f51b5 !important;
+}
+.navbar a {
+    color: white !important;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    direction: rtl;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+footer {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+/* پس‌زمینه و استایل بخش هدر */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1581091012184-2f67f1a17b7e?auto=format&fit=crop&w=1400&q=80');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    padding: 60px 20px;
+}
+
+/* محتوای وسط هدر */
+.hero-content {
+    animation: fadeInUp 2s ease-out;
+    z-index: 2;
+}
+
+/* آیکون‌های بخش ایده‌ها */
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.feature-icon:hover {
+    transform: scale(1.15);
+}
+
+/* استایل دکمه */
+.btn-custom {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+    border-radius: 8px;
+}
+
+.btn-custom:hover {
+    background-color: #ffd700 !important;
+    color: #000 !important;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* انیمیشن FadeUp برای متن */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-up {
+    opacity: 0;
+    animation: fadeInUp 1.5s ease forwards;
+}
+
+.animate-fade-up.delay-1 {
+    animation-delay: 0.5s;
+}
+
+.animate-fade-up.delay-2 {
+    animation-delay: 1s;
+}
